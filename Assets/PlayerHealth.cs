@@ -23,6 +23,7 @@ public class PlayerHealth : MonoBehaviour
         {
             Debug.Log("Hurt :(");
             health -= 1f;
+            Destroy(collision.gameObject);
         }
     }
 }
